@@ -153,4 +153,4 @@ else
 		pode_atirar = true
 	}
 }
-//// shape
+////aaaa
