@@ -6,7 +6,7 @@ repeat(abs(velh))
 	}
 	else
 	{
-		velh = -1
+		velh = 0
 	
 	}
 }
