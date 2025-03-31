@@ -19,7 +19,6 @@ timer = 0
 timer2 = 0
 velocidadeatk = 15
 velocidadetiro = 15
-dano = 1
 
 
 
