@@ -1,0 +1,1 @@
+var _dano = instance_create_layer(other.x,other.y,"Dano",obj_popup_tiro)

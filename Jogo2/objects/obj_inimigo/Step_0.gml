@@ -1,4 +1,4 @@
-move_towards_point(obj_Brawler.x, obj_Brawler.y, 2)
+move_towards_point(obj_Brawler.x, obj_Brawler.y, irandom_range(2,4))
 velv += grav
 if x < obj_Brawler.x{
 	image_xscale =- 1

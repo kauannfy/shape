@@ -13,8 +13,8 @@
   "name":"obj_Brawler",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Brawler",
+    "path":"folders/Objetos/Brawler.yy",
   },
   "parentObjectId":null,
   "persistent":false,

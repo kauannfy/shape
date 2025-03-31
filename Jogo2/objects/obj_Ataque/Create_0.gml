@@ -1,2 +1,2 @@
-dano = 1
+dano = 10
 atacou = false

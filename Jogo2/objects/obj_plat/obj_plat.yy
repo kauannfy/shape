@@ -6,8 +6,8 @@
   "name":"obj_plat",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Cenário",
+    "path":"folders/Objetos/Cenário.yy",
   },
   "parentObjectId":{
     "name":"obj_colisor",

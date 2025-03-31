@@ -113,16 +113,12 @@ switch(estado)
 	break
 }
 
-if sprite_index = sBrawlerEspada{
-	podeseratacado = false	
-}
-
 
 if pode_atacar = true{
 	timer = 0
 	if mouse_check_button_pressed(mb_left){
 		var direcao = point_direction(x,y,mouse_x,mouse_y)
-		instance_create_layer(x, y, "Instances",obj_Ataque,{image_angle: direcao})
+		instance_create_layer(x, y, "Dano",obj_Ataque,{image_angle: direcao})
 		pode_atacar = false
 	}
 }
@@ -138,7 +134,7 @@ else
 if pode_atirar = true{
 	timer2 = 0
 	if mouse_check_button_pressed(mb_right){
-		var tiro = instance_create_layer(x, y, "Instances",obj_Tiro)
+		var tiro = instance_create_layer(x, y, "Dano",obj_Tiro)
 		tiro.speed = 20
 		tiro.direction = point_direction(x,y,mouse_x,mouse_y)
 		tiro.image_angle = tiro.direction
