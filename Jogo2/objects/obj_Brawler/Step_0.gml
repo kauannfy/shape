@@ -1,10 +1,12 @@
+#region Movimentação
+///Comandos
 var _dir = keyboard_check(ord("D"))
 var _esq = keyboard_check(ord("A"))
 var _baixo = keyboard_check(ord("S"))
 var _pulo = keyboard_check_pressed(vk_space)
 var _dash = keyboard_check_pressed(ord("Q"))
-
-
+var _res = keyboard_check_pressed(ord("R"))
+////
 if not mouse_check_button(mb_left)
 {
 	dashduration = max(dashduration - 1,0)
@@ -12,7 +14,7 @@ if not mouse_check_button(mb_left)
 	velv += grav
 	if (dashduration >0) velv = 0
 
-	/////// Pular
+//// Pular
 	if (place_meeting(x, y + 1, obj_colisor))
 	{
 		pulos = maxpulos
@@ -22,7 +24,7 @@ if not mouse_check_button(mb_left)
 		pulos -=1
 		velv = pular
 	}
-
+////
 	if keyboard_check(ord("D"))
 	{
 		estado = "correno"
@@ -59,7 +61,7 @@ if not mouse_check_button(mb_left)
 		velh = image_xscale * dashspd
 	}
 
-	//////// No ar
+//// No ar
 	if (!place_meeting(x +80 , y + 50, obj_colisor))
 	{
 		estado = "pulano"
@@ -76,7 +78,11 @@ if not mouse_check_button(mb_left)
 			estado = "pulanocorreno"
 			image_xscale = -1
 		}
-	
+/////
+	if (_res)
+	{
+		room_restart()
+	}
 	}
 }
 
@@ -84,7 +90,8 @@ else
 {
 	estado = "atacano"
 }
-//// Sprites
+#endregion
+#region Mudança de sprites
 
 switch(estado)
 {
@@ -112,8 +119,8 @@ switch(estado)
 	sprite_index = sBrawlerEspada
 	break
 }
-
-
+#endregion
+#region Ataques
 if pode_atacar = true{
 	timer = 0
 	if mouse_check_button_pressed(mb_left){
@@ -149,4 +156,4 @@ else
 		pode_atirar = true
 	}
 }
-////bbb
+#endregion

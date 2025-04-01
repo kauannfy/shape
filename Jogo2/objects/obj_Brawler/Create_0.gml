@@ -25,3 +25,4 @@ velocidadetiro = 15
 
 alarm_set(0,5)
 alarm_set(1, 20)
+alarm_set(2,5)

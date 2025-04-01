@@ -29,7 +29,11 @@ else
 {
 	obj_camera.shakevalue = 0
 }
-
-var _dano = instance_create_layer(other.x,other.y,"Dano",obj_popup)
-
-
+if (critico = 1)
+{
+	var _danoc = instance_create_layer(other.x,other.y,"Dano",obj_popup_crit)
+}
+else
+{
+	var _dano = instance_create_layer(other.x,other.y,"Dano",obj_popup)
+}

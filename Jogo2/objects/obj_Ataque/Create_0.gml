@@ -1,5 +1,5 @@
 atacou = false
-critico = irandom_range(1, 5)
+critico = irandom_range(1, 2)
 if critico = 1{
 	dano = 20
 }
