@@ -21,6 +21,9 @@ else
 if atacou = true
 {
 	obj_camera.shakevalue = 1
+	if critico = 1{
+		travar_tela(100)	
+	}
 }
 else
 {

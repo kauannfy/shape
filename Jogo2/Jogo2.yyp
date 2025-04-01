@@ -50,6 +50,7 @@
     {"id":{"name":"obj_popup","path":"objects/obj_popup/obj_popup.yy",},},
     {"id":{"name":"obj_Tiro","path":"objects/obj_Tiro/obj_Tiro.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"BG","path":"sprites/BG/BG.yy",},},
     {"id":{"name":"sAtaque","path":"sprites/sAtaque/sAtaque.yy",},},
     {"id":{"name":"sAtaqueS","path":"sprites/sAtaqueS/sAtaqueS.yy",},},
